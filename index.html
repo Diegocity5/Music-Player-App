@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Play your songs with our music player app." />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <title>Music Player App</title>
+    <link rel="stylesheet" href="./src/css/style.css"/>
+  </head>
+  <body>
+    <main id="wrapper">
+      <section class="container" id="player">
+        <header><span></span><h1>freeCodeCamp</h1><span></span></header>
+        <article id="media-player-container">
+          <figure id="media-player-image">
+            <img src="https://www.billboard.com/wp-content/uploads/2023/08/olivia-rodrigo-press-cr-Zamar-Velez-2023-billboard-1548.jpg?w=942&h=623&crop=1&resize=942%2C623" alt="Olivia Rodrigo" />
+          </figure>
+          <div id="media-player">
+            <div id="media-info">
+              <h2 id="media-info-title" class="text-description">Good for you</h2>
+              <p id="media-info-autor" class="text-description">Olivia Rodrigo</p>
+            </div>
+            <div id="media-controls">
+              <span class="material-icons">skip_previous</span>
+              <span class="material-icons">play_arrow</span>
+              <span class="material-icons">pause</span>
+              <span class="material-icons">skip_next</span>
+              <span class="material-icons">shuffle</span>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="container" id="playlist">
+        <header><span></span><h2>Playlist</h2><span></span></header>
+        <ul id="playlist-container">
+          <li class="playlist-track">
+            <div id="track-manager">
+              <h3>Good for you</h3>
+              <h4>Olivia Rodrigo</h4>
+              <span class="track-duration">4:15</span>
+            </div>
+            <span class="material-icons track-cancel">cancel</span>
+          </li>
+          <hr>
+        </ul>
+      </section>
+    </main>
+
+    <script src="./src/scripts/main.js"></script>
+    <noscript>
+        Is necesary that you will anabled the javascript for can uses features of music player.
+    </noscript>
+  </body>
+</html>
