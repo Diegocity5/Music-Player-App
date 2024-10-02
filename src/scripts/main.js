@@ -5,6 +5,7 @@ const nextButton = document.getElementById('next');
 const previousButton = document.getElementById('previous');
 const shuffleButton = document.getElementById('shuffle');
 
+//Lista de canciones
 const allSongs = [
     {
         id: 0,
@@ -77,3 +78,7 @@ const allSongs = [
         src: "https://cdn.freecodecamp.org/curriculum/js-music-player/chasing-that-feeling.mp3"
     },
 ];
+
+/*Web Audio Api*/
+const audio = new Audio();//creando un nuevo elemento de audio html5
+
