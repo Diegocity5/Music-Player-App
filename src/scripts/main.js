@@ -98,3 +98,9 @@ const printMessage = org => {
     console.log(`${org} is awesome!`);
 }
 printMessage('Freecodecamp');
+
+/*Los arrow functions tambien permiten controlar el retorno como funciona normalmente.*/
+const addTwoNumbers = (num1, num2)=> {
+    return num1 + num2;
+}
+console.log(addTwoNumbers(3, 4));
