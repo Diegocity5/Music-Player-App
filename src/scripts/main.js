@@ -91,3 +91,10 @@ const printGreeting = ()=>{
     console.log('Hello there!');
 }
 printGreeting();
+
+/*Los arrow funtions aceptan parametros como las funciones normales si hay un solo argumento
+podemos omitir los parentesis*/
+const printMessage = org => {
+    console.log(`${org} is awesome!`);
+}
+printMessage('Freecodecamp');
