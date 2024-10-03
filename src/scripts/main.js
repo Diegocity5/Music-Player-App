@@ -83,5 +83,7 @@ const allSongs = [
 const audio = new Audio();//creando un nuevo elemento de audio html5
 let userData = {
     songs: [...allSongs],//creando una copia de la lista de canciones con el spread operator.
+    currentSong: null,
+    songCurrentTime: 0,
 };//Donde guardaremos la información de la cancion actual que se esta reproduciendo y el tiempo.
 
