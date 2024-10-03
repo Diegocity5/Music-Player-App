@@ -87,3 +87,6 @@ let userData = {
     songCurrentTime: 0,
 };//Donde guardaremos la información de la cancion actual que se esta reproduciendo y el tiempo.
 
+const printGreeting = ()=>{
+    console.log('Hello there!');
+}
