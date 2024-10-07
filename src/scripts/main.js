@@ -87,3 +87,5 @@ let userData = {
     songCurrentTime: 0,
 };//Donde guardaremos la información de la cancion actual que se esta reproduciendo y el tiempo.
 
+//Funcion que renderizar canciones en el DOM.
+const renderSongs = (array)=>{};
