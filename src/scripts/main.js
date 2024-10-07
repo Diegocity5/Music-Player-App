@@ -87,19 +87,3 @@ let userData = {
     songCurrentTime: 0,
 };//Donde guardaremos la información de la cancion actual que se esta reproduciendo y el tiempo.
 
-const printGreeting = ()=>{
-    console.log('Hello there!');
-}
-printGreeting();
-
-/*Los arrow funtions aceptan parametros como las funciones normales si hay un solo argumento
-podemos omitir los parentesis*/
-const printMessage = org => {
-    console.log(`${org} is awesome!`);
-}
-printMessage('Freecodecamp');
-
-/*Los arrow functions tambien permiten controlar el retorno como funciona normalmente.*/
-const addTwoNumbers = (num1, num2)=> num1 + num2;//Refactorizando usando el retorno implicito dado a que tiene una expresion pequeña.
-
-console.log(addTwoNumbers(3, 4));
