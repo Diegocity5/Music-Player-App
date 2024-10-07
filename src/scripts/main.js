@@ -100,7 +100,6 @@ const printMessage = org => {
 printMessage('Freecodecamp');
 
 /*Los arrow functions tambien permiten controlar el retorno como funciona normalmente.*/
-const addTwoNumbers = (num1, num2)=> {
-    return num1 + num2;
-}
+const addTwoNumbers = (num1, num2)=> num1 + num2;//Refactorizando usando el retorno implicito dado a que tiene una expresion pequeña.
+
 console.log(addTwoNumbers(3, 4));
