@@ -89,5 +89,5 @@ let userData = {
 
 //Funcion que renderizar canciones en el DOM.
 const renderSongs = (array)=>{
-    const songsHTML = array.map();
+    const songsHTML = array.map((song)=>{});//El método map() se utiliza para iterar a través de una matriz y devolver una nueva matriz
 };
