@@ -109,7 +109,18 @@ const renderSongs = (array)=>{
 
 //Funcion que ordenara alfabeticamente por titulo las canciones
 const sortSongs = ()=>{
-    userData?.songs.sort();//ordenar el array directamente dado a que es mutable.
+    userData?.songs.sort((a, b)=> {
+        //ordena antes antes que b o asia la izquierda
+        if(a.title < b.title){
+            return -1;
+        }
+        //ordena despues que b o hacia la derecha
+        if(a.title > b.title){
+            return 1;
+        }
+        //mantiene en el mismo lugar de orden porque es igual a b
+        return 0;
+    });//ordenar el array directamente dado a que es mutable.
 }
 /*El optional chaining (?.) es una característica de JavaScript
 que permite acceder a propiedades de objetos anidados de manera segura.
