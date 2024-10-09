@@ -106,8 +106,10 @@ const renderSongs = (array)=>{
 
     playlistSongs.innerHTML = songsHTML;//Insertando li songs en el contenedor de la playlist.
 };
+
+//Funcion que ordenara alfabeticamente por titulo las canciones
 const sortSongs = ()=>{
-    
+    userData?.songs.sort();//ordenar el array directamente dado a que es mutable.
 }
 /*El optional chaining (?.) es una característica de JavaScript
 que permite acceder a propiedades de objetos anidados de manera segura.
