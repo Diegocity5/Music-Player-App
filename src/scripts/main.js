@@ -124,6 +124,11 @@ const sortSongs = ()=>{
 
     return userData?.songs;
 }
+
+//Funcion para reproducir cualquier cancion mostrada en el DOM teniendo en cuenta su id
+const playSong = (id)=>{
+
+}
 /*El optional chaining (?.) es una característica de JavaScript
 que permite acceder a propiedades de objetos anidados de manera segura.
 Si una propiedad no existe en algún nivel de la cadena, en lugar de lanzar un error,
