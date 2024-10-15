@@ -129,6 +129,8 @@ const sortSongs = ()=>{
 const playSong = (id)=>{
     //Buscando la cancion que queremos reproducir gracias al metodo find.
     const song = userData?.songs.find((song) => song.id === id);
+    audio.src = song.src;//Agregando la ruta de la cancion encontrada para reproducir
+    audio.title = song.title;//Agregando el titulo de la cancion encontrada para mostrar
 }
 /*El optional chaining (?.) es una característica de JavaScript
 que permite acceder a propiedades de objetos anidados de manera segura.
