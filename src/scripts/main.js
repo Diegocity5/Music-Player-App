@@ -138,6 +138,8 @@ const playSong = (id)=>{
     }else {
         //Agrega un bloque else para manejar el tiempo de reproducción actual de la canción. Esto le permite reanudar la canción actual en el punto donde se pausó.
         audio.currentTime = userData?.songCurrentTime;
+        //Agregando la canción que se está reproduciendo actualmente.
+        userData.currentSong = song;
     }
 }
 /*El optional chaining (?.) es una característica de JavaScript
