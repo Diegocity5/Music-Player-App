@@ -83,7 +83,7 @@ const allSongs = [
 const audio = new Audio();//creando un nuevo elemento de audio html5
 let userData = {
     songs: [...allSongs],//creando una copia de la lista de canciones con el spread operator.
-    currentSong: {id:2,},
+    currentSong: null,
     songCurrentTime: 0,
 };//Donde guardaremos la información de la cancion actual que se esta reproduciendo y el tiempo.
 
@@ -135,6 +135,9 @@ const playSong = (id)=>{
     //Esta condición comprobará si no se está reproduciendo ninguna canción actual o si la canción actual es diferente de la que está a punto de reproducirse.
     if(userData?.currentSong === null || userData?.currentSong.id !== song.id){
         audio.currentTime = 0;//Antes de reproducir la canción, debes asegurarte de que comience desde el principio
+    }else {
+        //Agrega un bloque else para manejar el tiempo de reproducción actual de la canción. Esto le permite reanudar la canción actual en el punto donde se pausó.
+        audio.currentTime = userData?.songCurrentTime;
     }
 }
 /*El optional chaining (?.) es una característica de JavaScript
