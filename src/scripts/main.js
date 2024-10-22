@@ -149,7 +149,10 @@ const playSong = (id)=>{
 }
 
 playButton.addEventListener('click', ()=>{
-    
+    //Si le dieron en reproducir y no se ha seleccionado una cancion actual.
+    if(userData?.currentSong === null){
+        playSong(userData?.songs[0].id);//Inicie reproduciendo la primera cancion de la lista
+    }
 });
 /*El optional chaining (?.) es una característica de JavaScript
 que permite acceder a propiedades de objetos anidados de manera segura.
