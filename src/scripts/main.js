@@ -152,6 +152,8 @@ playButton.addEventListener('click', ()=>{
     //Si le dieron en reproducir y no se ha seleccionado una cancion actual.
     if(userData?.currentSong === null){
         playSong(userData?.songs[0].id);//Inicie reproduciendo la primera cancion de la lista
+    }else {//Esto garantiza que la canción que se reproduce actualmente continuará reproduciéndose cuando se haga clic en el botón de reproducción.
+        playSong(userData?.currentSong.id);
     }
 });
 /*El optional chaining (?.) es una característica de JavaScript
