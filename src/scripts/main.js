@@ -135,17 +135,17 @@ const playSong = (id)=>{
     //Esta condición comprobará si no se está reproduciendo ninguna canción actual o si la canción actual es diferente de la que está a punto de reproducirse.
     if(userData?.currentSong === null || userData?.currentSong.id !== song.id){
         audio.currentTime = 0;//Antes de reproducir la canción, debes asegurarte de que comience desde el principio
-    }else {//Si no es porque es hora de reproducir
+    }else {
         //Agrega un bloque else para manejar el tiempo de reproducción actual de la canción. Esto le permite reanudar la canción actual en el punto donde se pausó.
         audio.currentTime = userData?.songCurrentTime;
-        //Agregando la canción que se está reproduciendo actualmente.
-        userData.currentSong = song;
-        /*Agregando la clase playing al playButton para que tome los estilos CSS para la experiencia
-        del usuario cuando se este reproduciendo.*/
-        playButton.classList.add('playing');
-        //Reproducir la cancion finalmente
-        audio.play();
     }
+    //Agregando la canción que se está reproduciendo actualmente.
+    userData.currentSong = song;
+    /*Agregando la clase playing al playButton para que tome los estilos CSS para la experiencia
+    del usuario cuando se este reproduciendo.*/
+    playButton.classList.add('playing');
+    //Reproducir la cancion finalmente
+    audio.play();
 }
 
 playButton.addEventListener('click', ()=>{
