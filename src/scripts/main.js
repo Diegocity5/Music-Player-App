@@ -156,6 +156,12 @@ playButton.addEventListener('click', ()=>{
         playSong(userData?.currentSong.id);
     }
 });
+
+//Funcion que se encargara de pausar la cancion actual
+const pauseSong = ()=>{
+    
+}
+
 /*El optional chaining (?.) es una característica de JavaScript
 que permite acceder a propiedades de objetos anidados de manera segura.
 Si una propiedad no existe en algún nivel de la cadena, en lugar de lanzar un error,
