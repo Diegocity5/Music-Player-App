@@ -160,6 +160,8 @@ playButton.addEventListener('click', ()=>{
 //Funcion que se encargara de pausar la cancion actual
 const pauseSong = ()=>{
     userData.songCurrentTime = audio.currentTime;
+    playButton.classList.remove('playing');
+    audio.pause();
 }
 
 pauseButton.addEventListener('click', ()=>{
