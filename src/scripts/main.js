@@ -159,8 +159,12 @@ playButton.addEventListener('click', ()=>{
 
 //Funcion que se encargara de pausar la cancion actual
 const pauseSong = ()=>{
-    
+    userData.songCurrentTime = audio.currentTime;
 }
+
+pauseButton.addEventListener('click', ()=>{
+    pauseSong();
+})
 
 /*El optional chaining (?.) es una característica de JavaScript
 que permite acceder a propiedades de objetos anidados de manera segura.
