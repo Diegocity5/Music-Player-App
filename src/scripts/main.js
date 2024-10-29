@@ -183,6 +183,7 @@ const playPreviousSong = ()=>{
 
 //Funcion para resaltar visualmente la cancion que se esta reproduciendo en el DOM
 const highlightCurrentSong = ()=>{
+    const playlistSongElements = document.querySelectorAll('.playlist-song');
 }
 
 playButton.addEventListener('click', ()=>{
