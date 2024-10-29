@@ -161,6 +161,9 @@ const getCurrentSongIndex = ()=>{
 
 //Funcion para reproducir la siguiente cancion
 const playNextSong = ()=>{
+    if(userData?.currentSong === null){
+        playSong(userData?.songs[0].id);
+    }
 }
 
 playButton.addEventListener('click', ()=>{
