@@ -146,6 +146,7 @@ const playSong = (id)=>{
     playButton.classList.add('playing');
     //Reproducir la cancion finalmente
     audio.play();
+    highlightCurrentSong();
 }
 //Funcion que se encargara de pausar la cancion actual
 const pauseSong = ()=>{
@@ -186,6 +187,7 @@ const highlightCurrentSong = ()=>{
     const playlistSongElements = document.querySelectorAll('.playlist-song');
     const songToHighlight = document.getElementById(`song-${userData?.currentSong?.id}`);
 
+    //Limpiando el resaltado para resaltar uno nuevo
     playlistSongElements.forEach((songEl)=>{
         songEl.removeAttribute('aria-current');//¿Para que se remueve este atributo si yo no lo he colocado?
     });
