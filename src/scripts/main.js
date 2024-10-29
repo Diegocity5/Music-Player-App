@@ -191,6 +191,7 @@ playButton.addEventListener('click', ()=>{
 });
 pauseButton.addEventListener('click', pauseSong);
 nextButton.addEventListener('click', playNextSong);
+previousButton.addEventListener('click', playPreviousSong);
 /*El optional chaining (?.) es una característica de JavaScript
 que permite acceder a propiedades de objetos anidados de manera segura.
 Si una propiedad no existe en algún nivel de la cadena, en lugar de lanzar un error,
