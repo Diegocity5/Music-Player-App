@@ -181,6 +181,10 @@ const playPreviousSong = ()=>{
     }
 }
 
+//Funcion para resaltar visualmente la cancion que se esta reproduciendo en el DOM
+const highlightCurrentSong = ()=>{
+}
+
 playButton.addEventListener('click', ()=>{
     //Si le dieron en reproducir y no se ha seleccionado una cancion actual.
     if(userData?.currentSong === null){
