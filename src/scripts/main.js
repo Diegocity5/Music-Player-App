@@ -154,6 +154,11 @@ const pauseSong = ()=>{
     audio.pause();
 }
 
+//Funcion para obtener el indice de un elemento del array si no lo encuentra da -1
+const getCurrentSongIndex = ()=>{
+    return userData?.songs.indexOf(userData.currentSong);
+}
+
 playButton.addEventListener('click', ()=>{
     //Si le dieron en reproducir y no se ha seleccionado una cancion actual.
     if(userData?.currentSong === null){
