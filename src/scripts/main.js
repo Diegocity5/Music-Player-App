@@ -184,6 +184,7 @@ const playPreviousSong = ()=>{
 //Funcion para resaltar visualmente la cancion que se esta reproduciendo en el DOM
 const highlightCurrentSong = ()=>{
     const playlistSongElements = document.querySelectorAll('.playlist-song');
+    const songToHighlight = document.getElementById(`song-${userData?.currentSong?.id}`);
 }
 
 playButton.addEventListener('click', ()=>{
