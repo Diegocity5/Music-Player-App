@@ -189,6 +189,11 @@ const highlightCurrentSong = ()=>{
     playlistSongElements.forEach((songEl)=>{
         songEl.removeAttribute('aria-current');//¿Para que se remueve este atributo si yo no lo he colocado?
     });
+
+    //Hay una cancion selecionada para resaltar
+    if(songToHighlight){
+        songToHighlight.setAttribute('aria-current', 'true');//vuelvo a agregar el atributo pero solo a la cancion actual
+    }
 }
 
 playButton.addEventListener('click', ()=>{
