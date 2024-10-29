@@ -159,6 +159,10 @@ const getCurrentSongIndex = ()=>{
     return userData?.songs.indexOf(userData.currentSong);
 }
 
+//Funcion para reproducir la siguiente cancion
+const playNextSong = ()=>{
+}
+
 playButton.addEventListener('click', ()=>{
     //Si le dieron en reproducir y no se ha seleccionado una cancion actual.
     if(userData?.currentSong === null){
