@@ -170,6 +170,11 @@ const playNextSong = ()=>{
     }
 }
 
+//Funcion para reproducir la anterior cancion
+const playPreviousSong = ()=>{
+    
+}
+
 playButton.addEventListener('click', ()=>{
     //Si le dieron en reproducir y no se ha seleccionado una cancion actual.
     if(userData?.currentSong === null){
