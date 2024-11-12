@@ -200,6 +200,8 @@ const highlightCurrentSong = ()=>{
 
 //Funcion para mostrar el titulo y artista de la cancion actual en el DOM
 const setPlayerDisplay = ()=>{
+    const playingSong = document.getElementById('player-song-title');
+    const songArtist = document.getElementById('player-song-artist');
     
 }
 
