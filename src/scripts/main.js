@@ -198,6 +198,11 @@ const highlightCurrentSong = ()=>{
     }
 }
 
+//Funcion para mostrar el titulo y artista de la cancion actual en el DOM
+const setPlayerDisplay = ()=>{
+    
+}
+
 playButton.addEventListener('click', ()=>{
     //Si le dieron en reproducir y no se ha seleccionado una cancion actual.
     if(userData?.currentSong === null){
