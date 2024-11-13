@@ -147,6 +147,7 @@ const playSong = (id)=>{
     //Reproducir la cancion finalmente
     audio.play();
     highlightCurrentSong();
+    setPlayerDisplay();
 }
 //Funcion que se encargara de pausar la cancion actual
 const pauseSong = ()=>{
