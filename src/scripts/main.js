@@ -204,6 +204,10 @@ const setPlayerDisplay = ()=>{
     const songArtist = document.getElementById('player-song-artist');
     const currentTitle = userData?.currentSong?.title;
     const currentArtist = userData?.currentSong?.artist;
+
+    //Validando con operador ternario si hay tanto titulo y artista asigno el valor a la propiedad textContent.
+    playingSong.textContent = currentTitle ? currentTitle : "";
+    songArtist.textContent = currentArtist ? currentArtist : "";
 }
 
 playButton.addEventListener('click', ()=>{
