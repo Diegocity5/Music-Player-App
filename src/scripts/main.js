@@ -211,6 +211,13 @@ const setPlayerDisplay = ()=>{
     songArtist.textContent = currentArtist ? currentArtist : "";
 }
 
+//Funcion para hacer el reproductor mas acessible agregar texto descriptivo al boton play.
+const setPlayButtonAccessibleText = ()=>{
+    //Necesitamos guardar en song nuestra canción actual o la primera cancion del playlist.
+    const song = userData?.currentSong || userData?.songs[0];
+    
+}
+
 playButton.addEventListener('click', ()=>{
     //Si le dieron en reproducir y no se ha seleccionado una cancion actual.
     if(userData?.currentSong === null){
