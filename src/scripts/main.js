@@ -215,7 +215,8 @@ const setPlayerDisplay = ()=>{
 const setPlayButtonAccessibleText = ()=>{
     //Necesitamos guardar en song nuestra canción actual o la primera cancion del playlist.
     const song = userData?.currentSong || userData?.songs[0];
-    
+    //Agregando el atributo aria-label y dando su valor teniendo en cuanta la validación ternaria
+    playButton.setAttribute('aria-label', song?.title ? `Play ${song.title}` : "Play");
 }
 
 playButton.addEventListener('click', ()=>{
