@@ -220,6 +220,11 @@ const setPlayButtonAccessibleText = ()=>{
     playButton.setAttribute('aria-label', song?.title ? `Play ${song.title}` : "Play");
 }
 
+//Funcion para barajar las canciones de la playlist y actualizar su estado en el DOM cada vez que se haga.
+const shuffle = ()=>{
+}
+
+
 playButton.addEventListener('click', ()=>{
     //Si le dieron en reproducir y no se ha seleccionado una cancion actual.
     if(userData?.currentSong === null){
