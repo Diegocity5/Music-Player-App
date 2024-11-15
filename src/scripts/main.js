@@ -222,6 +222,15 @@ const setPlayButtonAccessibleText = ()=>{
 
 //Funcion para barajar las canciones de la playlist y actualizar su estado en el DOM cada vez que se haga.
 const shuffle = ()=>{
+    /*Anteriormente usamos .sort() para ordenar afabeticamente pero tambien el callback
+    que se pasa como argumento puede ajustarse para otro caso de uso como
+    aleatorizar una serie de elementos sería restar 0,5 de Math.random(),
+    lo que produce valores aleatorios que son positivos o negativos.
+    Esto hace que la comparación resulte en una mezcla de valores positivos y negativos,
+    lo que lleva a un orden aleatorio de los elementos.*/
+    userData?.songs.sort(()=> Math.random() - 0.5);
+    userData.currentSong = null;
+    userData.songCurrentTime = 0;
 }
 
 
