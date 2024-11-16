@@ -237,6 +237,10 @@ const shuffle = ()=>{
     setPlayButtonAccessibleText();
 }
 
+//Funcion para  administar el eliminar canciones de la playlist.
+const deleteSong = (id)=>{
+    
+}
 
 playButton.addEventListener('click', ()=>{
     //Si le dieron en reproducir y no se ha seleccionado una cancion actual.
