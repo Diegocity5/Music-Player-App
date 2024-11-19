@@ -240,7 +240,9 @@ const shuffle = ()=>{
 //Funcion para  administrar el eliminar canciones de la playlist.
 const deleteSong = (id)=>{
     userData.songs = userData?.songs.filter((song)=> song.id !== id);
-    
+    renderSongs(userData?.songs);//Renderizando canciones filtradas
+    highlightCurrentSong();
+    setPlayButtonAccessibleText()
 }
 
 playButton.addEventListener('click', ()=>{
