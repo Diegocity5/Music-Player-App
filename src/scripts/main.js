@@ -246,6 +246,10 @@ const deleteSong = (id)=>{
 
     //Si la cancion que se reproduce altualmente es igual al id de la que se quiere eliminar.
     if(userData?.currentSong?.id === id){
+        userData.currentSong = null;
+        userData.songCurrentTime = 0;
+        pauseSong();
+        setPlayerDisplay();
     }
 }
 
