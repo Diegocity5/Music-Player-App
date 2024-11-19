@@ -243,6 +243,10 @@ const deleteSong = (id)=>{
     renderSongs(userData?.songs);//Renderizando canciones filtradas
     highlightCurrentSong();
     setPlayButtonAccessibleText()
+
+    //Si la cancion que se reproduce altualmente es igual al id de la que se quiere eliminar.
+    if(userData?.currentSong?.id === id){
+    }
 }
 
 playButton.addEventListener('click', ()=>{
