@@ -237,8 +237,9 @@ const shuffle = ()=>{
     setPlayButtonAccessibleText();
 }
 
-//Funcion para  administar el eliminar canciones de la playlist.
+//Funcion para  administrar el eliminar canciones de la playlist.
 const deleteSong = (id)=>{
+    userData.songs = userData?.songs.filter((song)=> song.id !== id);
     
 }
 
