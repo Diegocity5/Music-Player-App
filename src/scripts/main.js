@@ -251,6 +251,10 @@ const deleteSong = (id)=>{
         pauseSong();
         setPlayerDisplay();
     }
+    //Si el array quedo sin canciones por que se eliminaron todas.
+    if(userData?.songs.length === 0){
+
+    }
 }
 
 playButton.addEventListener('click', ()=>{
