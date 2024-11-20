@@ -253,7 +253,7 @@ const deleteSong = (id)=>{
     }
     //Si el array quedo sin canciones por que se eliminaron todas.
     if(userData?.songs.length === 0){
-
+        const resetButton = document.createElement('button');
     }
 }
 
