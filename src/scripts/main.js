@@ -259,6 +259,10 @@ const deleteSong = (id)=>{
         resetButton.ariaLabel = "Reset Playlist";
         resetButton.appendChild(resetText);
         playlistSongs.appendChild(resetButton);
+
+        //Funcionalidad para traer devuelta la playlist completa cuando presionen resetButton.
+        resetButton.addEventListener('click', ()=>{
+        });
     }
 }
 
