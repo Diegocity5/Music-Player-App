@@ -277,6 +277,8 @@ playButton.addEventListener('click', ()=>{
         playSong(userData?.currentSong.id);
     }
 });
+
+audio.addEventListener('ended', ()=>{});
 pauseButton.addEventListener('click', pauseSong);
 nextButton.addEventListener('click', playNextSong);
 previousButton.addEventListener('click', playPreviousSong);
