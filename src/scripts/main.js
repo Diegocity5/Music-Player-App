@@ -262,6 +262,7 @@ const deleteSong = (id)=>{
 
         //Funcionalidad para traer devuelta la playlist completa cuando presionen resetButton.
         resetButton.addEventListener('click', ()=>{
+            userData.songs = [...allSongs];//Volviendo a crear una copia del original
         });
     }
 }
