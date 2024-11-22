@@ -278,7 +278,12 @@ playButton.addEventListener('click', ()=>{
     }
 });
 
-audio.addEventListener('ended', ()=>{});
+audio.addEventListener('ended', ()=>{
+    const currentSongIndex = getCurrentSongIndex();
+    const nextSongExists = userData?.songs[currentSongIndex + 1] !== 'undefined';
+    /*la validacion aqui tambien puede ser asi:
+    const nextSongExists = userData?.songs.length - 1 > currentSongIndex ? true: false;*/
+});
 pauseButton.addEventListener('click', pauseSong);
 nextButton.addEventListener('click', playNextSong);
 previousButton.addEventListener('click', playPreviousSong);
