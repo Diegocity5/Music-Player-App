@@ -283,6 +283,9 @@ audio.addEventListener('ended', ()=>{
     const nextSongExists = userData?.songs[currentSongIndex + 1] !== 'undefined';
     /*la validacion aqui tambien puede ser asi:
     const nextSongExists = userData?.songs.length - 1 > currentSongIndex ? true: false;*/
+    if(nextSongExists){
+        playNextSong();
+    }
 });
 pauseButton.addEventListener('click', pauseSong);
 nextButton.addEventListener('click', playNextSong);
